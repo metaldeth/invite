@@ -4,12 +4,10 @@ import {useNavigate} from "react-router-dom";
 const HomeInvite: FC = () => {
   const navigate = useNavigate()
 
-  navigate('0')
+
 
   return(
-    <>
-      hello home invite
-    </>
+    <button onClick={() => navigate('0')}>click me</button>
   )
 }
 
