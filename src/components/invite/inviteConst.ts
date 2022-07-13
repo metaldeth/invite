@@ -5,7 +5,6 @@ export type InviteType = {
 
 export type User = {
   name: string;
-  surname?: string;
 }
 
 export type RouteInviteParam = {
@@ -20,7 +19,6 @@ export const inviteList: InviteType[] = [
       },
       {
         name: 'Сергей',
-        surname: 'Нефедовы'
       },
     ],
     caption: 'Мы приглашаем вас на свадьбу, можно тут побольше текста, прям сильно побольше, ' +

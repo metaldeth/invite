@@ -7,7 +7,7 @@ const InviteRouter: FC = () => {
   return(
     <Routes>
       <Route path=':inviteId' element={<InviteCard/>}/>
-      <Route path='/' element={<HomeInvite/>}/>
+       <Route path='/' element={<HomeInvite/>}/> 
     </Routes>
   )
 }
