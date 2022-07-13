@@ -6,7 +6,7 @@ import './inviteCard.scss'
 import {getTimer} from "./timer";
 
 const InviteCard: FC = () => {
-  const { inviteId } = useParams<RouteInviteParam>();
+  const { inviteId = 0 } = useParams<RouteInviteParam>();
   const validateId = Number(inviteId);
   const timer = getTimer();
 
@@ -22,6 +22,8 @@ const InviteCard: FC = () => {
         <div className='head'>
           <h1 className='item'>Анна и Александр</h1>
           <h1 className='item'>Нефёдовы</h1>
+          {/* TODO: посмотреть что со шрифтами */}
+          <span>Разобраться со шрифтами</span>
         </div>
         <h1 className='item'>17.09.2022</h1>
       </div>
@@ -30,9 +32,10 @@ const InviteCard: FC = () => {
           <h1 className='header'>Дорогие {invite?.userList?.map((user, index, array) => {
             const postfix = (index + 1) < array.length ? 'и' : ''
             return(
-              <>{`${user.name} ${user.surname || ''} ${postfix} `}</>
+              <>{`${user.name} ${postfix} `}</>
             )
           })}</h1>
+          <div className='diver'/>
           <h3>{invite.caption}</h3>
         </div>
       </div>
