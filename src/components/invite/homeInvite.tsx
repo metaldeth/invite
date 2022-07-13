@@ -1,12 +1,10 @@
-import React, {FC, useEffect} from "react";
+import React, {FC} from "react";
 import {useNavigate} from "react-router-dom";
 
 const HomeInvite: FC = () => {
   const navigate = useNavigate()
 
-  useEffect(() => {
-    navigate('0')
-  }, [])
+  navigate('0')
 
   return(
     <>
