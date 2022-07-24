@@ -4,6 +4,7 @@ import {inviteList, RouteInviteParam} from "./inviteConst";
 
 import './inviteCard.scss'
 import {getTimer} from "./timer";
+import {YandexMap} from "../YandexMap";
 
 const InviteCard: FC = () => {
   const { inviteId = 0 } = useParams<RouteInviteParam>();
@@ -14,16 +15,14 @@ const InviteCard: FC = () => {
 
   const invite = inviteList[validateId];
 
-
-
   return(
     <>
       <div className='block1'>
         <div className='head'>
+          <div className="leo"/>
           <h1 className='item'>Анна и Александр</h1>
           <h1 className='item'>Нефёдовы</h1>
-          {/* TODO: посмотреть что со шрифтами */}
-          <span>Разобраться со шрифтами</span>
+          {/*<span>Наплывает при переворачивании экрана на телефоне</span>*/}
         </div>
         <h1 className='item'>17.09.2022</h1>
       </div>
@@ -39,9 +38,6 @@ const InviteCard: FC = () => {
           <h3>{invite.caption}</h3>
         </div>
       </div>
-      {/* <div className='instruction'>
-        instruction
-      </div> */}
       <div className='participant'>
         <div className="card">
           <div className="photo1"/>
@@ -51,6 +47,9 @@ const InviteCard: FC = () => {
           <div className="photo2"/>
           <div className="name">Анна</div>
         </div>
+      </div>
+      <div className='instruction'>
+        <h1 className='headerLabel'>План мероприятий</h1>
       </div>
       <div className='timer'>
         <div className='timerItem'>
@@ -70,6 +69,7 @@ const InviteCard: FC = () => {
           <div className='timerSecondary'>{timer.minute}</div>
         </div>
       </div>
+      <YandexMap/>
     </>
   )
 }

@@ -6,16 +6,9 @@
   width: 100%;
   height: 100%;
 
-  // font
-  font-family: 'Caveat', cursive;
+  font-family: 'Play', sans-serif;
 
   color: rgba(0, 0, 0, 1);
-  //background-image: url("https://instapik.ru/wp-content/uploads/2021/03/nezhnyy-fon-dlya-fotoshopa-v-pastelnyh-tonah-linii.jpg");
-  //background-image: url("https://kartinkin.net/uploads/posts/2021-07/1625529976_32-kartinkin-com-p-nezhnii-fon-minimalizm-krasivie-foni-35.png");
-  //background-image: url("https://funart.pro/uploads/posts/2021-04/1618515874_34-funart_pro-p-oboi-fon-nezhno-fioletovii-fon-35.jpg");
-  //background-image: url("https://abrakadabra.fun/uploads/posts/2022-02/1643950651_1-abrakadabra-fun-p-fon-raznotsvetnii-nezhnii-1.jpg");
-  //background-image: url("/background/background.jpg");
-
 
   @media screen and (orientation: landscape) {
     background-size: 100% auto;
@@ -28,6 +21,10 @@
     background-size: auto 100%;
     font-size: 20px;
     background-image: url("/background/background.jpg");
+  }
+
+  @media only screen and (max-height: 500px) {
+    font-size: 15px;
   }
 
   .item {
@@ -44,6 +41,19 @@
     padding-bottom: 10px;
     margin-bottom: 10px;
 
+    .leo {
+      width: 200px;
+      height: 200px;
+      background-image: url('/photo/Leo.png');
+      background-size: 100%;
+      border-radius: 10px;
+
+      @media only screen and (max-height: 500px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
     .item {
       margin-top: 0;
       margin-bottom: 15px;
@@ -57,7 +67,7 @@
   width: 100%;
   //height: 700px;
 
-  font-family: 'Caveat', cursive;
+  font-family: 'Play', sans-serif;
 
   //@media screen and (orientation: landscape) {
   //  background-image: url("https://u.makeup.com.ua/q/qv/qvmarkjgvrzv.png");
@@ -118,7 +128,7 @@
     //border: 1px solid rgba(0, 0, 0, 0.221);
     border-radius: 20px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    font-family: 'Caveat', cursive;
+    font-family: 'Play', sans-serif;
     font-size: 30px;
     background-image: url("/background/background2.jpg");
     background-size: auto 100%;
@@ -145,6 +155,17 @@
   }
 }
 
+.instruction {
+  max-width: 700px;
+  margin: 100px auto 0;
+
+  .headerLabel {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
 .timer {
   max-width: 1000px;
   padding: 100px;
@@ -164,7 +185,7 @@
     flex-direction: column;
     border-radius: 50%;
     margin: 20px;
-    font-family: 'Caveat', cursive;
+    font-family: 'Play', sans-serif;
     font-size: 30px;
     //box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   }
