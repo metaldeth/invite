@@ -69,7 +69,7 @@ const InviteCard: FC = () => {
           <div className='timerSecondary'>{timer.minute}</div>
         </div>
       </div>
-      <YandexMap/>
+      {/*<YandexMap/>*/}
     </>
   )
 }
