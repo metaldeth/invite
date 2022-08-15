@@ -123,3 +123,27 @@ reportWebVitals();
 //
 // type DeleteTaskDTO = {uuid: string};
 
+type Length<T extends any[]> = T extends { length: infer L } ? L : never;
+
+type BuildTuple<L extends number, T extends any[] = []> =
+   T extends { length: L } ? T : BuildTuple<L, [...T, any]>;
+
+type Add<A extends number, B extends number> =
+   Length<[...BuildTuple<A>, ...BuildTuple<B>]>;
+
+
+type Sum<Arr extends number[], S extends number = 0> =
+   Arr extends [infer H, ...(infer T)]
+      ? H extends number
+         ? T extends []
+            ? Add<S, H>
+            : T extends number[]
+               ? Sum<T, Add<S, H>>
+               : never
+         : never
+      : never
+
+
+type S = Sum<[10, 20, 15]>
+
+const ttt: S = 45

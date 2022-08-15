@@ -13,7 +13,7 @@
   @media screen and (orientation: landscape) {
     background-size: 100% auto;
     font-size: 30px;
-    background-image: url("https://abrakadabra.fun/uploads/posts/2022-02/1643950651_1-abrakadabra-fun-p-fon-raznotsvetnii-nezhnii-1.jpg");
+    background-image: url("/background/59dcc7361c9e415f066a2b65.jpg");
 
   }
 
@@ -58,7 +58,6 @@
       margin-top: 0;
       margin-bottom: 15px;
       display: flex;
-
     }
   }
 }
@@ -94,6 +93,16 @@
     justify-content: space-evenly;
     align-items: center;
 
+    .inviteText {
+      width: 100%;
+      white-space: pre-wrap;
+
+      &:last-child {
+        white-space: pre-line;
+        text-decoration: underline overline rgba(255, 8, 0, 0.5);
+      }
+    }
+
     @media screen and (orientation: landscape) and (max-width: 1000px) {
       padding-left: 150px;
     }
@@ -104,6 +113,7 @@
 
     .diver {
       width: 100%;
+      margin: 30px 0;
       border-bottom: 1px solid #c5c5c5;
     }
   }
@@ -162,7 +172,24 @@
   .headerLabel {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #c5c5c5;
+    margin: 0 auto 10px;
+  }
+
+  .instructionItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.5);
+
+    .instructionItem-substring {
+      margin: 0 10px;
+      width: 31%;
+    }
   }
 }
 
@@ -188,5 +215,41 @@
     font-family: 'Play', sans-serif;
     font-size: 30px;
     //box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  padding-bottom: 50px;
+  margin: auto;
+
+  .itemFirst {
+    font-size: 25px;
+    margin: 0 5px;
+    padding: 0;
+  }
+
+  .itemLast {
+    font-size: 15px;
+    margin: 0 5px;
+    padding: 0;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 100px;
+    //border: 1px solid black;
+    padding: 10px 20px;
+    //background-color: rgba(0, 90, 255, 0.25);
+    border: 10px solid rgba(0, 0, 0, 0.221);
   }
 }
