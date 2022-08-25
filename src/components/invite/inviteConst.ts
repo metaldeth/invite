@@ -192,6 +192,15 @@ export const inviteList: InviteType[] = [
     ],
     locationId: 4,
   },
+  {
+    userList: [
+      {
+        name: 'Софья',
+      },
+    ],
+    isWoman: true,
+    locationId: 2,
+  },
 ]
 
 export const startPosition: {position: string, time: string}[] = [

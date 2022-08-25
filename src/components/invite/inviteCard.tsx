@@ -5,6 +5,7 @@ import {inviteList, inviteText, RouteInviteParam, startPosition, taskList} from 
 import './inviteCard.scss'
 import {getTimer} from "./timer";
 import {YandexMap} from "../YandexMap";
+import {SeatingPlan} from "./seatingPlan";
 
 const InviteCard: FC = () => {
   const { inviteId = 0 } = useParams<RouteInviteParam>();
@@ -84,6 +85,7 @@ const InviteCard: FC = () => {
           <div className='timerSecondary'>{timer.minute}</div>
         </div>
       </div>
+      {/*<SeatingPlan inviteId={validateId}/>*/}
       <div className="footer">
         <a href="http://metaldeth.ru:8080/" target="_blank">
           <div className='itemFirst'>Наши фоточки</div>
