@@ -104,10 +104,8 @@ export const inviteList: InviteType[] = [
       {
         name: 'Татьяна',
       },
-      {
-        name: 'Олег',
-      },
     ],
+    isWoman: true,
     locationId: 0,
   },
   {
@@ -182,7 +180,7 @@ export const inviteList: InviteType[] = [
         name: 'Михаил',
       },
     ],
-    locationId: 3,
+    locationId: 2,
   },
   {
     userList: [
