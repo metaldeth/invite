@@ -1,114 +1,144 @@
-export const seatingPlanConst: {name: string, inviteId: number}[] = [
+export type SeatingPlanConst = {name: string, smallName: string, inviteId: number};
+
+export const seatingPlanConst: SeatingPlanConst[] = [
   {
-    name: '',
+    name: 'Нефёдова Светлана',
+    smallName: 'Мама',
     inviteId: 0
   },
   {
-    name: '',
+    name: 'Дик Наталья',
+    smallName: 'Мама',
+    inviteId: 1
+  },
+  {
+    name: 'Нефёдов Сергей',
+    smallName: 'Папа',
     inviteId: 0
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Дик Сергей',
+    smallName: 'Папа',
+    inviteId: 1
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Хапёркина Любовь',
+    smallName: 'Бабушка',
+    inviteId: 9
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Дик Валентина',
+    smallName: 'Бабушка',
+    inviteId: 2
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Хапёркина Татьяна',
+    smallName: 'Тётя Таня',
+    inviteId: 7
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Дик Виктор',
+    smallName: 'Дедушка',
+    inviteId: 2
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Твардовская Наталья ',
+    smallName: 'Тётя Наташа',
+    inviteId: 6
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Кондратьева Любовь',
+    smallName: 'Бабушка',
+    inviteId: 3
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Тимофей',
+    smallName: 'Тимофей',
+    inviteId: 6
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Кондратьев Владимир',
+    smallName: 'Крёстный',
+    inviteId: 3
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Твардовская Дарья',
+    smallName: 'Даша',
+    inviteId: 5
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Кондратьев Дмитрий',
+    smallName: 'Дима',
+    inviteId: 16
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Михаил',
+    smallName: 'Михаил',
+    inviteId: 5
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Прокопьев Сергей',
+    smallName: 'Сергей',
+    inviteId: 13
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Твардовский Алексей',
+    smallName: 'Алексей',
+    inviteId: 4
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Леконцева Дарья',
+    smallName: 'Даша',
+    inviteId: 14
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Твардовская Наталья',
+    smallName: 'Наташа',
+    inviteId: 4
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Крысина Софья',
+    smallName: 'Софья',
+    inviteId: 17
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Хапёркина Ирина',
+    smallName: 'Ирина',
+    inviteId: 10
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Борисова Ксения',
+    smallName: 'Ксения',
+    inviteId: 15
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Хапёркина Диана',
+    smallName: 'Диана',
+    inviteId: 8
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Климова София',
+    smallName: 'София',
+    inviteId: 15
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Тушина Валерия',
+    smallName: 'Валерия',
+    inviteId: 11
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Климов Михаил',
+    smallName: 'Михаил',
+    inviteId: 15
   },
   {
-    name: '',
-    inviteId: 0
+    name: 'Тушин Николай',
+    smallName: 'Николай',
+    inviteId: 11
   },
   {
-    name: '',
-    inviteId: 0
-  },
-  {
-    name: '',
-    inviteId: 0
+    name: 'Широков Даниил',
+    smallName: 'Даниил',
+    inviteId: 12
   },
 ]
