@@ -46,7 +46,7 @@ const Christmas = () => {
           !!timer.minute &&
           <div className='timerItem'>
             <div className='timerHeader'>Минут</div>
-            <div className='timerSecondary'>{}</div>
+            <div className='timerSecondary'>{timer.minute}</div>
           </div>
         }
       </div>
