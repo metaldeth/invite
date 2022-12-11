@@ -3,7 +3,8 @@ import React, {useEffect, useState} from "react";
 import './Christmas.scss'
 
 const Christmas = () => {
-  const [timer, setTimer] = useState(getTimer())
+  const [timer, setTimer] = useState(getTimer());
+  const isHappy = !timer.month && !timer.day && !timer.hours && !timer.minute
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -17,15 +18,20 @@ const Christmas = () => {
 
   return (
     <div className='Christmas'>
-      <div>
-        <h1>До нового года осталось</h1>
-      </div>
+      {isHappy
+        ?
+        <div className='happy'>С новым годом</div>
+        :
+        <div className='notHappy'>
+          До нового года осталось
+        </div>
+      }
       <div className='timer'>
         {
           !!timer.month &&
           <div className='timerItem'>
             <div className='timerHeader'>Месяцев</div>
-            <div className='timerSecondary'>{}</div>
+            <div className='timerSecondary'>{timer.month}</div>
           </div>
         }
         {
