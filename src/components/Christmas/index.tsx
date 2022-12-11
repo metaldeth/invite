@@ -21,22 +21,34 @@ const Christmas = () => {
         <h1>До нового года осталось</h1>
       </div>
       <div className='timer'>
-        <div className='timerItem'>
-          <div className='timerHeader'>Месяцев</div>
-          <div className='timerSecondary'>{timer.month}</div>
-        </div>
-        <div className='timerItem'>
-          <div className='timerHeader'>Дней</div>
-          <div className='timerSecondary'>{timer.day}</div>
-        </div>
-        <div className='timerItem'>
-          <div className='timerHeader'>Часов</div>
-          <div className='timerSecondary'>{timer.hours}</div>
-        </div>
-        <div className='timerItem'>
-          <div className='timerHeader'>Минут</div>
-          <div className='timerSecondary'>{timer.minute}</div>
-        </div>
+        {
+          !!timer.month &&
+          <div className='timerItem'>
+            <div className='timerHeader'>Месяцев</div>
+            <div className='timerSecondary'>{}</div>
+          </div>
+        }
+        {
+          !!timer.day &&
+          <div className='timerItem'>
+            <div className='timerHeader'>Дней</div>
+            <div className='timerSecondary'>{timer.day}</div>
+          </div>
+        }
+        {
+          !!timer.hours &&
+          <div className='timerItem'>
+            <div className='timerHeader'>Часов</div>
+            <div className='timerSecondary'>{timer.hours}</div>
+          </div>
+        }
+        {
+          !!timer.minute &&
+          <div className='timerItem'>
+            <div className='timerHeader'>Минут</div>
+            <div className='timerSecondary'>{}</div>
+          </div>
+        }
       </div>
     </div>
   )
